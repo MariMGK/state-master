@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="WebApplication8_master.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+            <table style="width: 100%;">
+                <tr>
+                    <td colspan="3">Parent Master</td>
+                </tr>
+                <tr>
+                    <td valign="top"><asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+                        <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Child2.aspx" runat="server">Page 1</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Child1.aspx" runat="server">Page 2</asp:HyperLink>
+                    </td>
+                </tr>                
+            </table>
+        </div>
+    </form>
+</body>
+</html>
+

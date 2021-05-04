@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/master.Master" CodeBehind="child.master.cs" Inherits="WebApplication8_master.child" %>
+
+<asp:Content id="Content1" ContentPlaceholderID="MainContent" runat="server">
+   <asp:panel runat="server" id="panelMain" backcolor="lightyellow">
+   <h2>Child master</h2>
+      <asp:panel runat="server" id="panel1" backcolor="lightblue">
+        <p>This is child master content.</p>
+        <asp:ContentPlaceHolder ID="ChildContent1" runat="server" />
+      </asp:panel>
+      <asp:panel runat="server" id="panel2" backcolor="pink">
+         <p>This is child master content.</p>
+         <asp:ContentPlaceHolder ID="ChildContent2" runat="server" />
+      </asp:panel>
+      <br />
+   </asp:panel>
+</asp:Content>
